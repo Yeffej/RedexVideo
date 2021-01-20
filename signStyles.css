@@ -1,0 +1,158 @@
+:root {
+    --BackgroundMAinGradient: linear-gradient(to bottom,  #d90429, #b60e38, #921152, #9c0483 );
+    --mainColor: white;
+    /* --BackgroundFooter: linear-gradient(#EC0B43, #da496d ); */
+}
+body {
+    background: var(--BackgroundMAinGradient);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 110px 1fr 100px;
+    grid-gap: 30px;
+    min-height: 100vh;
+}
+body::-webkit-scrollbar {
+    background: #000000;
+    border-radius: 20px;
+    width: 15px;
+}
+
+/* Header Sign Styles */
+
+header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.header__main figure {
+margin: 0;
+}
+.header__main figure img {
+width: 300px;
+} 
+
+/* Styles of the Sign In Or Sign Out */
+
+.Sign {
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: "title title"
+                        "data socialMedia";
+    border:  2px solid var(--mainColor);
+    box-shadow: 2px 2px 15px 2px;
+    width: 60%;
+    padding: 15px;
+    border-radius: 15px;
+}
+.Sign__title {
+    color: var(--mainColor);
+    grid-area: title;
+    text-decoration: underline;
+    justify-self: center;
+    align-self: center;
+    margin: 0;
+}
+.Sign__Data {
+    width: 50%;
+    grid-area: data;
+    padding: 15px;
+}
+.Sign__Data-form input {
+    display: block;
+    padding: 10px 25px;
+    outline: none;
+    background: transparent;
+    border: none;
+    border-left: 5px solid var(--mainColor);
+    border-bottom: 3px solid var(--mainColor);
+    border-radius: 10px 0 10px 0 / 10px 0 0 0;
+    color: var(--mainColor);
+    margin-bottom: 1em;
+}
+.Sign__Data-form input::placeholder {
+    color: var(--mainColor);
+    font-size: 1.2em;
+}
+.Sign__Data-form button {
+    padding: .8em 1.5em;
+    font-weight: 600;
+    color: var(--mainColor);
+    border-radius: 20px;
+    background-color: transparent;
+    outline: none;
+    border: 3px outset var(--mainColor);
+    /* box-shadow: inset 1px 1px 1px 1px #d90429; */
+    transition: 200ms;
+    -webkit-transition: 200ms;
+}
+.Sign__Data-form button:active {
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+}
+
+.Sign__SocialMedia {
+    width: 50%;
+    grid-area: socialMedia;
+    justify-self: start;
+    white-space: nowrap;
+    color: var(--mainColor);
+}
+.Sign__SocialMedia label {
+    color: var(--mainColor);
+    font-weight: 600;
+}
+.Sign__SocialMedia a{
+    color: var(--mainColor);
+    text-decoration: none;
+}
+.Sign__SocialMedia a:hover {
+    text-decoration: underline;
+    color: black;
+}
+.Sign__SocialMedia p img {
+    vertical-align: middle;
+}
+.Sign__SocialMedia__passForget {
+    margin-top: 10px;
+    display: block;
+}
+
+/* Footer Styles  */
+
+.footer {
+    display: flex;
+    align-items: center;
+    color: #0d0f12;
+}
+.footer__description {
+    margin: 0;
+    width: 50%;
+    white-space: nowrap;
+}
+.footer__description > * {
+    margin: 10px;
+}
+.footer__description a{
+    text-decoration: none;
+    color: var(--mainColor);
+}
+.footer__description a:hover {
+    text-decoration: underline;
+    color: black;
+}
+.footer__SocialMedia {
+    text-align: center;
+    white-space: nowrap;
+    width: 50%;
+}
+.footer__SocialMedia a{
+    text-decoration: none;
+}
+.footer__SocialMedia img {
+    width: 50px;
+    margin: 0 25px 0 25px;
+}

@@ -20,6 +20,7 @@ body {
                          "searcher"        
                          "carousel"
                           "footer";
+    grid-gap: 25px 0;
 }
 body::-webkit-scrollbar {
     background: var(--scrollBarMainColor);
@@ -39,7 +40,7 @@ header {
     margin: 0;
 }
 .header__main figure img {
-    width: 10em;
+    width: 400px;
 }
 .header__descriptive {
     display: flex;
@@ -222,6 +223,7 @@ header {
     align-items: center;
     color: #0d0f12;
     grid-area: footer;
+    margin-top: 20px;
 }
 .footer__description {
     margin: 0;

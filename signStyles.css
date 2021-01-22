@@ -47,6 +47,7 @@ width: 300px;
     width: 60%;
     padding: 15px;
     border-radius: 15px;
+    box-sizing: border-box;
 }
 .Sign__title {
     color: var(--mainColor);
@@ -145,7 +146,7 @@ width: 300px;
     color: black;
 }
 .footer__SocialMedia {
-    text-align: center;
+    text-align: end;
     white-space: nowrap;
     width: 50%;
 }
@@ -155,4 +156,75 @@ width: 300px;
 .footer__SocialMedia img {
     width: 50px;
     margin: 0 25px 0 25px;
+}
+
+@media screen and (max-width: 800px) {
+    .footer__SocialMedia {
+        white-space: initial;
+    }
+    .footer__description {
+        white-space: initial;
+        line-height: 1.5;
+        text-align: center;
+    }
+    .header__main figure img  {
+        width: 300px;
+    }
+    .Sign {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 2fr;
+        grid-template-areas: "title"
+                              "data "
+                             "socialMedia";
+        justify-items: center;
+        align-items: center;
+    }
+    .Sign__SocialMedia {
+        justify-self: initial;
+        width: auto;
+    }
+    .Sign__Data {
+        width: auto;
+    }
+    .footer__SocialMedia img {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        grid-gap: 15px;
+    }
+    .Sign {
+        padding: 10px;
+    }
+    .Sign__SocialMedia{
+        font-size: .8em;
+    }
+    .Sign__Data-form input {
+        font-size: .7em;
+        padding-right: 0;
+    }
+    .footer__SocialMedia img {
+        margin: 0 8px;
+        width: 35px;
+    }
+    .footer__SocialMedia img {
+        width: 35px;
+    }
+    .footer__description {
+        font-size: .85em;
+    }
+    
+}
+@media screen and (max-width: 360px) {
+    .Sign {
+        box-sizing: initial;
+    }
+    .footer__SocialMedia img {
+        width: 30px;
+    }
+    .footer__description {
+        font-size: .75em;
+    }
 }

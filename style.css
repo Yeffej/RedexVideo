@@ -23,10 +23,21 @@ body {
     grid-gap: 25px 0;
 }
 body::-webkit-scrollbar {
-    background: var(--scrollBarMainColor);
     border-radius: 50px;
     
 }
+body::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    /* background-color: #8b0219b2; */
+    background-color: rgba(0, 40, 116, 0.528);
+}   
+body::-webkit-scrollbar-track {
+    background: var(--scrollBarMainColor);
+}
+body::-webkit-scrollbar-button {
+    height: 0;
+}
+
 
 /* HEADER STYLES  */
 

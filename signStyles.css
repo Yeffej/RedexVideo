@@ -15,9 +15,17 @@ body {
 }
 body::-webkit-scrollbar {
     background: #000000;
-    border-radius: 20px;
     width: 15px;
 }
+body::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background: #d904279d;
+    /* background: rgba(0, 40, 116, 0.528); */
+}   
+body::-webkit-scrollbar-button {
+    height: 0;
+}
+
 
 /* Header Sign Styles */
 

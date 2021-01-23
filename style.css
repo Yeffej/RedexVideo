@@ -71,7 +71,6 @@ header {
 }
 .header__descriptive details[open] {
     height: 7em;
-    overflow: auto;
 }
 .header__descriptive summary::-webkit-details-marker {
     width: .5em;
@@ -298,6 +297,9 @@ header {
     .header__main figure img {
         width: 170px;
         height: 100px;
+    }
+    .header__descriptive details[open] {
+        overflow: auto;
     }
     .header__descriptive details ul {
         padding-left: 10px;
